@@ -5,10 +5,10 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=2-00:00:00
-#SBATCH --chdir=/gpfs/projects/rizzo/iamanor/DOCK6_Development/Similarity_Island/Multi-Grid_testing
 #SBATCH --output=logs/multigrid_.out
 #SBATCH --error=logs/multigrid_.err
 
 set -euo pipefail
 
+cd "${SLURM_SUBMIT_DIR}"
 python3 -u 001.prepare_multigrid.py generate

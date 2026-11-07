@@ -10,6 +10,7 @@ import math
 import os
 import re
 import shlex
+import shutil
 import struct
 import subprocess
 import sys
@@ -55,6 +56,26 @@ def components(rows):
 
 def prepare():
     rows = load_residues()
+
+    if list(GRIDS.glob("*.nrg")) or list(GRIDS.glob("*.bmp")):
+        raise ValueError("Existing grids found; preparation would overwrite their setup.")
+
+    # Obtain the native utilities from the installed DOCK distribution.
+    dock = Path(os.environ.get(
+        "DOCK_ROOT",
+        "/gpfs/projects/rizzo/iamanor/DOCK6_Development/Similarity_Island/dock6_dev",
+    ))
+    names = ("grid", "multigrid_fp_gen.py", "mol2.py")
+    missing = [name for name in names if not (SOFTWARE / name).is_file()]
+
+    for name in missing:
+        if not (dock / "bin" / name).is_file():
+            raise FileNotFoundError(dock / "bin" / name)
+
+    SOFTWARE.mkdir(exist_ok=True)
+    for name in missing:
+        shutil.copy2(dock / "bin" / name, SOFTWARE / name)
+
     for directory in (GRIDS, SELECTION, LOGS):
         directory.mkdir(exist_ok=True)
 
