@@ -1,0 +1,18 @@
+# Generated calculation files.
+/grids/*
+!/grids/grid.in
+!/grids/grid_checksums.tsv
+/logs/
+/software/
+/archive/
+/first_grid_test/
+
+# Archives and temporary files.
+*.tar.gz
+*.tgz
+*.zip
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+*~

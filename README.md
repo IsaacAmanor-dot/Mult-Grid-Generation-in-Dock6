@@ -61,5 +61,3 @@ performance require separate experiments.
 All 323 grid pairs were generated and passed file validation.
 Development helpers and the original generation scripts are preserved
 under `archive/development/`.
-# Mult-Grid-Generation-in-Dock6
-# Mult-Grid-Generation-in-Dock6

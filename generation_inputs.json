@@ -1,0 +1,14 @@
+{
+  "inputs/receptor.mol2": "fece502b93c38cdf40db38d399a9f632c2dcc7e46c344b1d1f4ffb8d0202bbe5",
+  "inputs/box.pdb": "be878106246b84d28f172bb4fe1f9af711d9b534a9e23c2f53cb6113f99153a3",
+  "inputs/vdw_AMBER_parm99.defn": "6b8b5089d5184240a97046a08f31124dcf46c4dde046818cd3ec3c06a2729938",
+  "inputs/chem.defn": "8100c63fe9e6d99daa5e9cd3212a9c871708c753f0d318ebaec986ae5be6577e",
+  "software/grid": "8e5d0d72040b39672e9fe1421f6c931eb6e6e8e277a44f946c49823ac0d105fe",
+  "software/multigrid_fp_gen.py": "c1928bda9f84aa745a203d43bf1f50fe39dc33981e6d1faf21e9b275f3fbd157",
+  "software/mol2.py": "d0afae964f44d92957743a74591486b09c398d3c0c7b83d3a9827437e7783099",
+  "grids/grid.in": "62bb7799ebdb0a76f02da77870faed05ed9b5b412be4b2bc1abd3ef89aaf5173",
+  "selection/selected_residue_ids.txt": "6fcb12947247e6223844ec0cbca9914ae152fd16ae845fcd500b7abc239f0137",
+  "selection/grid_components.tsv": "f2ab944ab9926d21570c5bb9beb7b47a3783eb109f7849add1a4f7df97fa9567",
+  "software/multigrid_fp_gen_checked.py": "2cda5441f06ba832664d6e308b1af6b18d70021a13b45d5667b6dfe0d769afa6",
+  "001.prepare_multigrid.py": "c2442c1e8c87595db662d8f08aa6c82d3158fd0a708c68e20f83815b9071ad45"
+}
